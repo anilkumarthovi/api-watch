@@ -1,0 +1,16 @@
+
+    curl --location --request GET 'http://localhost:9901/questions'
+
+curl --location --request POST 'http://localhost:9901/questions' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+"question": "Favourite programming language?",
+"choices": [
+"Swift",
+"Python",
+"Objective-C",
+"Ruby"
+]
+}'
+
+/var/log/nginx/server.log
